@@ -1,0 +1,18 @@
+import time
+t = time.strftime('%H:%M:%S')
+
+hour = int(time.strftime('%H'))
+hour = int(input("Enter hour:"))
+
+minutes = int(time.strftime('%M'))
+minutes = int(input("Enter minutes:"))
+
+print(hour)
+print(minutes)
+
+if (hour>=0 and hour<12):
+  print("GOOD MORNING SIR")
+elif (hour>=12 and hour<17):
+  print("GOOD AFTERNOON SIR")
+if (hour>=17 and hour<24):
+  print("GOOD NIGHT SIR")
